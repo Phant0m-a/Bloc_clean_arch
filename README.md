@@ -5,6 +5,16 @@
     1. Get all dependencies using `flutter pub get`
     2. Run application `flutter run`
 
+
+## Sample Creds
+
+  use these login creds to login!
+  email: `ahsan@gmail.com`
+  password: `123456`
+
+
+
+
 ## Implementation notes:
  Flutter application built with Clean Architecture and bloc.
  
@@ -15,6 +25,6 @@
  3. LoginUsecase
  4. LogoutUsecase
 
- 
+
 
  
