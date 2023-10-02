@@ -51,12 +51,18 @@ class _LoginUserState extends State<LoginUser> {
 
   Widget _buildLoginForm(BuildContext context) {
     return Container(
-      color: Colors.grey.shade100,
+      color: Colors.grey.shade200,
       padding: const EdgeInsets.all(20),
       child: Form(
         key: _formKey,
         child: Column(
           children: <Widget>[
+            Text('Login',
+                style: TextStyle(
+                    color: Colors.grey[600],
+                    fontSize: 40,
+                    fontWeight: FontWeight.bold)),
+            SizedBox(height: 20),
             _buildTextField(
               controller: email,
               labelText: 'Email',
@@ -90,7 +96,8 @@ class _LoginUserState extends State<LoginUser> {
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.only(top: 20),
-                child: ElevatedButton(
+                child: MaterialButton(
+                  color: Colors.grey.shade400,
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
                       context.read<AuthenticationBloc>().add(
@@ -101,7 +108,7 @@ class _LoginUserState extends State<LoginUser> {
                   },
                   child: const Text(
                     'Log in',
-                    style: TextStyle(color: Colors.white, fontSize: 20),
+                    style: TextStyle(fontSize: 20),
                   ),
                 ),
               ),

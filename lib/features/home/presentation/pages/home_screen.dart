@@ -63,16 +63,14 @@ class _HomeScreenState extends State<HomeScreen> {
                                 fontSize: 18, color: Colors.grey[600]),
                           ),
                           const SizedBox(height: 20),
-                          IconButton(
+                          MaterialButton(
+                              color: Colors.grey[400],
+                              child: Text('Logout'),
                               onPressed: () {
                                 context
                                     .read<AuthenticationBloc>()
                                     .add(LogoutUserEvent());
-                              },
-                              icon: const Icon(
-                                Icons.logout_outlined,
-                                color: Colors.black,
-                              ))
+                              })
                         ],
                       ),
                     ),
