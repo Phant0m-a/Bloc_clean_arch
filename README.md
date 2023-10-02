@@ -1,13 +1,20 @@
-# bloc_clean
+# inbloc_clean
+  
 
-This application is built with flutter clean architecture with Bloc Cubit State Management. Application contains three screens as following:
+## How to run the application:
+    1. Get all dependencies using `flutter pub get`
+    2. Run application `flutter run`
 
-    1. Welcome Screen
-    2. Login Screen
-    3. Home Screen
+## Implementation notes:
+ Flutter application built with Clean Architecture and bloc.
+ 
+ I have created the following usecase:
 
-## Sample Login Creds:
-    email: `ahsan@gmail.com `
-    password: `123456`
+ 1. getCachedUserUseCase
+ 2. CacheUserUseCase
+ 3. LoginUsecase
+ 4. LogoutUsecase
 
+ 
 
+ 
